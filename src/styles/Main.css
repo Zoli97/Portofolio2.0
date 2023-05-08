@@ -1,0 +1,10 @@
+@media screen and (min-width: 340px) {
+  .svg_container {
+    position: absolute;
+    left: 5rem;
+    right: 0;
+    bottom: 12rem;
+    display: grid;
+    place-items: center;
+  }
+}

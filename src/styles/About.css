@@ -1,0 +1,75 @@
+.qoutes-container {
+  background-color: #e0cbac;
+}
+
+.qoutes {
+  color: #042740;
+}
+
+._description_ {
+  line-height: 1.3rem;
+  letter-spacing: 1.2px;
+}
+.top-to-btm {
+  position: relative;
+}
+
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.icon-style {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #042740;
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  animation: move_the_btn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes move_the_btn {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media screen and (min-width: 365px) {
+  .image1 {
+    width: min(600px, 100%);
+    object-fit: cover;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .svg-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .description {
+    display: none;
+  }
+}

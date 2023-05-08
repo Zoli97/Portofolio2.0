@@ -1,0 +1,16 @@
+.contact {
+  background-color: #e0cbac;
+}
+.image {
+  max-width: 100%;
+  width: 550px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 640px) {
+  .box2 {
+    display: none;
+  }
+}

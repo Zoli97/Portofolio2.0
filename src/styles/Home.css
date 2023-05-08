@@ -1,0 +1,29 @@
+.button {
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: black;
+  transition: all 0.5s ease;
+  border: 3px solid #042740;
+  border-radius: 6px;
+}
+
+.box-describe-me {
+  padding-top: 2.2em;
+}
+
+@media screen and (max-width: 700px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 65% auto;
+    padding: 0;
+  }
+}

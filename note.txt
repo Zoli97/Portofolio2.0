@@ -1,0 +1,266 @@
+going detect when either a component or page gets unmounted from DOM, so its animated and once its animated out its going to remove it 
+
+initial={{ opacity: 0 }}
+animate={{ opacity: 1, x: 200 }}
+transition={{
+  ease: "easeIn",
+  when: "beforeChildren",
+  staggerChildren: 0.3,
+  duration: 1.5,
+}}
+
+
+
+
+<p
+className="text-center fixed left-20 right-10 -bottom-20 sm:text-2xl sm:-bottom-56"
+style={{ color: "#042740" }}
+>
+A negative mind will never give you <br /> a positive life.
+</p>
+
+
+<p
+className="text-center absolute left-20 right-10 -bottom-20  z-50 font-medium text-8xl  sm:-bottom-52 "
+style={{ color: "#042740" }}
+>
+“
+</p>
+
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+version="1.1"
+preserveAspectRatio="none"
+viewBox="0 0 1440 560"
+>
+<g mask='url("#SvgjsMask1013")' fill="none">
+  <rect width="1440" height="560" x="0" y="0" fill="#a18763"></rect>
+  <path
+    d="M 0,279 C 72,243 216,119.4 360,99 C 504,78.6 576,170.2 720,177 C 864,183.8 936,126.8 1080,133 C 1224,139.2 1368,193 1440,208L1440 560L0 560z"
+    fill="#d1b894"
+  ></path>
+  <path
+    d="M 0,354 C 96,387.6 288,523.6 480,522 C 672,520.4 768,360.2 960,346 C 1152,331.8 1344,430 1440,451L1440 560L0 560z"
+    fill="rgb(255, 231, 197)"
+  ></path>
+</g>
+<defs>
+  <mask id="SvgjsMask1013">
+    <rect width="1440" height="560" fill="#ffffff"></rect>
+  </mask>
+</defs>
+</svg>
+
+
+<p className="text-sm fontbold ">
+I agree to the Terms and SErvice that my data will be
+taken and sold.
+</p>
+
+the name input dont working because i put the value as empty string so i use setName to modify 
+const [name, setName] = useState("");
+
+value={name}
+onChange={(e) => setName(e.target.value)}
+formik knows how to handle it
+
+form submit
+
+i have access to the error params 
+update the label based on if i have an error or notv
+
+When the replace property is set to true on the options object, the current entry in the history stack gets replaced with the new one.
+
+In other words, navigating to the new route won't push a new entry into the history stack, so if the user clicks the back button, they won't be able to navigate to the previous page.
+This is useful, for example, when a user logs in - you don't want them to be able to click the back button and get back to the login page.
+
+Or if you have a route that redirects uses to a different page - you don't want users to click the back button and get redirected again.
+
+
+
+
+
+i want to create reveal aniamtion on my text.
+The useAnimation hook allows us to define animations and then apply them to our components, such as Character.
+The useInView hook will trigger the animation only once the text is in view – providing those nice reveal animations we’re after as a user scrolls the page.
+
+
+
+In order to animate words character by character, 
+we’re going to need to separate each character out into its own <span> element. This is fairly simple to do using a .map() function:
+
+
+We want the copy to be computer-readable and accessible as well, so we’ll set the aria-label on the Title component with the role "heading", 
+and then we’ll hide each individual Character from the browser & screen readers using aria-hidden="true".
+
+
+wordAnimation empty because i dont want the word itself to animate i will animate each chars  but we need to define an animation
+ in order to trigger the child character animations when the word comes into the viewport.
+
+ Finally, we’ve added an additional .map() function for each word, with the character map having been updated to run within each word, instead of within the overall text component.
+
+
+
+ <motion.img
+ className="svg-elipse"
+ src={elipse}
+ alt=""
+ initial={{ opacity: 0, scale: 0.7 }}
+ animate={{ opacity: 1, scale: 1 }}
+ transition={{
+   ease: "easeIn",
+   duration: 1.7,
+   ease: [0, 0.71, 0.2, 1.01],
+   stiffness: 100,
+   scale: {
+     type: "spring",
+     damping: 5,
+     stiffness: 100,
+     restDelta: 0.001,
+   },
+ }}
+/>
+
+<button
+className="buttton w-36 h-10  bg-[#78290F] text-white cursor-pointer "
+onClick={ToggleTheTheme}
+>
+<Brightness6Icon className="m-1" /> Dark Mode
+</button>
+
+
+
+<m.p className="qoutes text-center absolute left-20 right-10 -bottom-20  z-50 font-medium text-8xl  sm:-bottom-56 qoute">
+“
+</m.p>
+
+<m.p className="text-center absolute left-20 right-10 -bottom-64 sm:text-2xl sm:-bottom-64 qoute">
+
+
+
+
+
+
+<motion.div
+className=" title1 pt-24 w-full h-1/5 sm:pt-10 "
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{
+  ease: "easeIn",
+
+  duration: 1.75,
+}}
+>
+<h3 className=" title text-[#042740]  text-lg font-medium  lg:text-[28px] text-[32px] lg:text-center ">
+  Find your inspiration
+</h3>
+</motion.div>
+<div className=" text  flex justify-center text-center">
+<motion.h1
+  className="my_title title text-[#042740]  tracking-widest font-bold  pt-56 sm:pt-50 text-[110px]  sm:text-[110px]  lg:text-[160px] z-10 "
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1, x: 20 }}
+  transition={{ ease: "easeOut", duration: 3 }}
+>
+  Explore
+</motion.h1>
+
+<svg
+  className=" absolute left-0 right-0 bottom-0 lg:top-24 lg:bottom-0  m-auto  sm:left-0"
+  initial={{ opacity: 0, scale: 0.7 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{
+    ease: "easeIn",
+    duration: 1.7,
+    ease: [0, 0.71, 0.2, 1.01],
+    stiffness: 100,
+    scale: {
+      type: "spring",
+      damping: 5,
+      stiffness: 100,
+      restDelta: 0.001,
+    },
+  }}
+  width="538"
+  height="500"
+  viewBox="0 0 538 500"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g filter="url(#filter0_d_6_47)">
+    <path
+      className="svg-elipse"
+      d="M534 246C534 381.586 415.355 491.5 269 491.5C122.645 491.5 4 381.586 4 246C4 110.414 370.059 462.129 269 0.5C415.355 0.5 534 110.414 534 246Z"
+      fill="#15616D"
+      fillOpacity="0.7"
+      shapeRendering="crispEdges"
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_6_47"
+      x="0"
+      y="0.5"
+      width="538"
+      height="499"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+      />
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_6_47"
+      />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_6_47"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>
+</div>
+
+
+<h3 className="my-title title text-[#042740]  text-lg font-medium  lg:text-[28px] text-[32px]  ">
+Find your inspiration
+</h3>
+
+{/* <div className=" text  flex justify-center text-center">
+<motion.h1
+  className="my_title title text-[#042740]  tracking-widest font-bold  pt-36 sm:pt-50 text-[60px]  sm:text-[110px]  lg:text-[160px] z-10 "
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1, x: 20 }}
+  transition={{ ease: "easeOut", duration: 3 }}
+>
+  Explore
+</motion.h1>
+</div> */}
+{/* absolute left-0 right-0 bottom-0 lg:top-24 lg:bottom-0  m-auto  sm:left-0  */}
+
+
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{
+  ease: "easeIn",
+
+  duration: 1.75,
+}}
+
+/*grid place-items-center absolute left-20 right-0 bottom-48 lg:top-24 lg:bottom-0  m-auto sm:bottom-25 sm:left-0*/
