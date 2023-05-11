@@ -264,3 +264,6 @@ transition={{
 }}
 
 /*grid place-items-center absolute left-20 right-0 bottom-48 lg:top-24 lg:bottom-0  m-auto sm:bottom-25 sm:left-0*/
+
+
+before deploy the portofolio to firebase make sure to minify the code and optimize assets

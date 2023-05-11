@@ -42,6 +42,7 @@ function About() {
    */
 
   const [showTopBtn, setShowBtn] = useState(false);
+  const title = "About Me";
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -75,7 +76,9 @@ function About() {
           className="title text-center  text-[#042740] font-bold text-3xl sm:text-4xl pt-14 "
           style={{ x }}
         >
-          About me
+          {title.split("").map((letra) => (
+            <span className="letra">{letra}</span>
+          ))}
         </Title>
 
         <div className="big-container w-full grid justify-around place-items-center sm:flex sm:place-items-center lg:flex lg:justify-around lg:items-center about ">

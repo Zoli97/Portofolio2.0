@@ -73,3 +73,19 @@
     display: none;
   }
 }
+
+/*targets only devices that can hover */
+@media (hover: hover) {
+  .letra {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.25rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.334);
+
+    z-index: 99;
+  }
+
+  .letra:hover {
+    transform: scale(1.4);
+  }
+}

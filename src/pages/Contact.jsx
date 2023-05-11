@@ -96,7 +96,7 @@ function Contact() {
               animate={show}
               exit={exit}
               onSubmit={formik.handleSubmit}
-              className="flex bg-[#000000b5] form_bg rounded-lg w-3/5   form  "
+              className="flex bg-[#000000b5] form_bg rounded-lg w-11/12 lg:w-3/5 form "
             >
               <div className="flex-1 p-16">
                 <h1 className="text-3xl text-white pb-2 font-bold ">
