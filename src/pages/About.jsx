@@ -76,8 +76,10 @@ function About() {
           className="title text-center  text-[#042740] font-bold text-3xl sm:text-4xl pt-14 "
           style={{ x }}
         >
-          {title.split("").map((letra) => (
-            <span className="letra">{letra}</span>
+          {title.split("").map((letra, index) => (
+            <span className="letra" key={index}>
+              {letra}
+            </span>
           ))}
         </Title>
 
