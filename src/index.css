@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffe7c5 repeating-conic-gradient(#0000 0.000045%, #000d 0.0001%);
+  background: #ffe7c5 repeating-conic-gradient(#0000 0.0000035%, #000d 0.0001%);
   background-blend-mode: overlay, screen, screen;
   font-family: "Faustina", serif;
 }
