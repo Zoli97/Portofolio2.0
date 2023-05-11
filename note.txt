@@ -267,3 +267,24 @@ transition={{
 
 
 before deploy the portofolio to firebase make sure to minify the code and optimize assets
+
+junk
+/* 0% {
+  transform: translateY(0px);
+}
+
+25% {
+  transform: translateY(10px);
+}
+
+50% {
+  transform: translateY(0px);
+}
+
+75% {
+  transform: translateY(-10px);
+}
+
+100% {
+  transform: translateY(0px);
+} */

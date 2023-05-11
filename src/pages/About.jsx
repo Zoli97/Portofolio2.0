@@ -144,6 +144,7 @@ function About() {
             viewBox="0 0 96 89"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="arrow_down"
           >
             <g clipPath="url(#clip0_85_87)">
               <path

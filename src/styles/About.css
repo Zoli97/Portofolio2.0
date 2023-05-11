@@ -34,27 +34,32 @@
   transition: all 0.5s ease-in-out;
 }
 
-@keyframes move_the_btn {
-  0% {
-    transform: translateY(0px);
-  }
+.arrow_down {
+  animation: MoveUpAndDown 3s linear infinite;
+}
 
-  25% {
-    transform: translateY(10px);
+@keyframes move_the_btn {
+  0%,
+  100% {
+    transform: translateY(-35px);
   }
 
   50% {
-    transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0px);
+    transform: translateY(30px);
   }
 }
+
+@keyframes MoveUpAndDown {
+  0%,
+  100% {
+    transform: translateY(-50px);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+}
+
 @media screen and (min-width: 365px) {
   .image1 {
     width: min(600px, 100%);
@@ -81,8 +86,6 @@
     display: inline-block;
     margin: 0.25rem;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.334);
-
-    z-index: 99;
   }
 
   .letra:hover {
