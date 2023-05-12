@@ -85,8 +85,13 @@ color: ${({ theme }) => theme.text};
     background: ${({ theme }) => theme.form_background};
   }
 
-  .hamburger{
+  .hamburger_on_dark_bg{
     background: ${({ theme }) => theme.hamburger_background};
+  }
+
+  .hamburger_on_light_bg{
+
+    background: ${({ theme }) => theme.hamburger_default_background};
   }
 
   .responsive_navbar{
@@ -112,6 +117,12 @@ color: ${({ theme }) => theme.text};
   
   
 }
+
+.arr_down{
+  fill: ${({ theme }) => theme.arr_dwn_bg};
+}
+
+
 
   
 `;
