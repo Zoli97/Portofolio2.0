@@ -118,7 +118,7 @@ function Home() {
             </div>
 
             <div>
-              <p className="pl-16 pr-16 text-[20px] font-medium  sm:pl-20 sm:text-justify">
+              <p className="pl-16 pr-16 text-[18px] font-medium sm:pl-20  sm:text-justify sm:text-[20px]">
                 “Learning to write programs stretches your mind, and helps you
                 think better, creates a way of thinking about things that I
                 think is helpful in all domains.” - Bill Gates
