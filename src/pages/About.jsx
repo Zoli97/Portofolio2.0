@@ -73,7 +73,7 @@ function About() {
         <Navbar />
 
         <Title
-          className="title text-center  text-[#042740] font-bold text-3xl sm:text-4xl pt-14 "
+          className="title pt-14  text-center text-3xl font-bold text-[#042740] sm:text-4xl "
           style={{ x }}
         >
           {title.split("").map((letra, index) => (
@@ -83,20 +83,20 @@ function About() {
           ))}
         </Title>
 
-        <div className="big-container w-full grid justify-around place-items-center sm:flex sm:place-items-center lg:flex lg:justify-around lg:items-center about ">
-          <div className="text-container sm:w-4/5 lg:w-2/5 m-4  pt-14 ">
+        <div className="big-container about grid w-full place-items-center justify-around sm:flex sm:place-items-center lg:flex lg:items-center lg:justify-around ">
+          <div className="text-container m-4 pt-14 sm:w-4/5  lg:w-2/5 ">
             <m.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, x: 7 }}
               transition={{ ease: "easeOut", duration: 3.5 }}
-              className=" _description_ text-justify text-[#042740] font-medium text-sm sm:text-[18px] descriptions"
+              className=" _description_ descriptions text-justify text-sm font-medium text-[#042740] sm:text-[18px]"
             >
               Hello people, my name is Tazlo Zoli Erwin a young passionate about
               Frontend Development and UI/UX Design.
               <m.span
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="_description_ text-justify description text-[#042740] font-medium text-sm sm:text-[18px] descriptions"
+                className="_description_ description descriptions text-justify text-sm font-medium text-[#042740] sm:text-[18px]"
               >
                 I live in Romania, Arad for 25 years. I hold bachelor degree as
                 I gratuated in Computer Science from the Aurel Vlaicu
@@ -123,7 +123,7 @@ function About() {
           </div>
 
           <m.div
-            className="image-container  mt-20 sm:pt-28 sm:w-3/5 md:w-2/5 lg:w-2/5"
+            className="image-container  mt-20 sm:w-3/5 sm:pt-28 md:w-2/5 lg:w-2/5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 1.89 }}
@@ -167,16 +167,16 @@ function About() {
           exit="hidden"
           transition={{ duration: 2, ease: "easeOut" }}
           ref={ref}
-          className="qoutes-container w-full h-48 sm:w-2/4  my-qoutes-container flex items-center justify-center"
+          className="qoutes-container my-qoutes-container flex h-48  w-full items-center justify-center sm:w-2/4"
         >
-          <m.p className="text-center  sm:text-2xl  qoute">
+          <m.p className="qoute  text-center  sm:text-2xl">
             A negative mind will never give you <br /> a positive life.
           </m.p>
         </m.div>
 
-        <div className="big-container   justify-around items-center  sm:flex sm:place-items-center lg:flex lg:justify-around lg:items-center pb-20">
+        <div className="big-container   items-center justify-around  pb-20 sm:flex sm:place-items-center lg:flex lg:items-center lg:justify-around">
           <m.div
-            className="image-container mt-20 sm:pt-28 sm:w-3/5 md:w-2/5 lg:w-2/5"
+            className="image-container mt-20 sm:w-3/5 sm:pt-28 md:w-2/5 lg:w-2/5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 2.29, delay: 1.2 }}
@@ -189,18 +189,18 @@ function About() {
             />
           </m.div>
 
-          <div className="text-container  m-4 pt-14 sm:w-4/5 lg:w-2/5 sm:pt-14 ">
+          <div className="text-container  m-4 pt-14 sm:w-4/5 sm:pt-14 lg:w-2/5 ">
             <m.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="_description_ text-justify text-[#042740] font-medium text-sm sm:text-[16px] descriptions"
+              className="_description_ descriptions text-justify text-sm font-medium text-[#042740] sm:text-[16px]"
             >
               I like to do calisthenics workout using my bodyweight and doing an
               efficient and much harder exercises using my own bodyweight.
               <m.span
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="_description_ text-justify description text-[#042740] font-medium text-sm sm:text-[18px] descriptions"
+                className="_description_ description descriptions text-justify text-sm font-medium text-[#042740] sm:text-[18px]"
               >
                 {" "}
                 When I’m feeling tired or something like that i implemented in

@@ -45,11 +45,11 @@ function Navbar() {
   //   localStorage.setItem("theme", JSON.stringify(theme));
   // }, [theme]);
   return (
-    <div className="container w-full flex justify-around content-center items-center p-6  sm:items-center">
+    <div className="container flex w-full content-center items-center justify-around p-6  sm:items-center">
       <div className="overflow-hidden">
         <Link to="/">
           <mo.h2
-            className="top_navbar_title text-[#042740] font-bold   text-2xl sm:text-[32px]"
+            className="top_navbar_title text-2xl font-bold   text-[#042740] sm:text-[32px]"
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
             transition={{ delay: 0.5, duration: 0.5 }}
@@ -62,7 +62,7 @@ function Navbar() {
         <ul
           className={`nav-items  ${
             isOpen ? "active responsive_navbar" : ""
-          }  w-3/12 text-[#042740] font-light text-xl flex gap-12`}
+          }  flex w-3/12 gap-12 text-xl font-light text-[#042740]`}
         >
           <li className=" link cursor-pointer ">
             <Link className="list_text" to="/about">

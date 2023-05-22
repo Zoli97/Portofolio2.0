@@ -96,7 +96,7 @@ export const FixedBackgrounds = () => {
       <div className="container1 py-12 " style={container}>
         <div>
           <m.p
-            className="constrain mb-4 text-sm sm:text-[18px]  text-center"
+            className="constrain mb-4 text-center text-sm  sm:text-[18px]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             style={content}
@@ -110,7 +110,7 @@ export const FixedBackgrounds = () => {
         <MyTitle
           aria-label={line1}
           role="heading"
-          className="text-3xl sm:text-7xl text-center"
+          className="text-center text-3xl sm:text-7xl"
         >
           {line1.split(" ").map((word, index) => {
             return (
@@ -145,7 +145,7 @@ export const FixedBackgrounds = () => {
 
       <div className="container1 py-12 " style={container}>
         <m.p
-          className="constrain  mb-4 text-sm sm:text-[18px] text-center"
+          className="constrain  mb-4 text-center text-sm sm:text-[18px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.2, delay: 0.8 }}
@@ -155,7 +155,7 @@ export const FixedBackgrounds = () => {
         </m.p>
 
         <m.p
-          className="constrain text-sm sm:text-[18px]  text-center"
+          className="constrain text-center text-sm  sm:text-[18px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           style={content}
@@ -166,7 +166,7 @@ export const FixedBackgrounds = () => {
 
       <Image src={leaf3} alt="Space Port Background" height="50vh" fixed darken>
         <m.h4
-          className="text-3xl sm:text-7xl text-center"
+          className="text-center text-3xl sm:text-7xl"
           style={title}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: -5 }}
@@ -189,7 +189,7 @@ export const FixedBackgrounds = () => {
 
       <Image src={trees} alt="Space Port Background" height="50vh" fixed darken>
         <m.h4
-          className="text-3xl sm:text-7xl text-center"
+          className="text-center text-3xl sm:text-7xl"
           style={title}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: 5 }}
@@ -216,7 +216,7 @@ export const FixedBackgrounds = () => {
         darken
       >
         <m.h4
-          className="text-3xl sm:text-7xl text-center"
+          className="text-center text-3xl sm:text-7xl"
           style={title}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: -5 }}

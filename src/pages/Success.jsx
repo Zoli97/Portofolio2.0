@@ -19,18 +19,18 @@ function Success() {
   }, []);
   return (
     <m.main
-      className="h-screen flex items-center justify-center  "
+      className="flex h-screen items-center justify-center  "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="text-center bg-[#FFE7C5] rounded-lg font-regular lg:w-1/2 m-4 text-black">
-        <h1 className="text-3xl pb-4 font-bold">Thanks for the subscription</h1>
-        <p className="text-lg text-black-500">
+      <div className="font-regular m-4 rounded-lg bg-[#FFE7C5] text-center text-black lg:w-1/2">
+        <h1 className="pb-4 text-3xl font-bold">Thanks for the subscription</h1>
+        <p className="text-black-500 text-lg">
           We have sent an email over at lorem. We will get back to you as soon
           as we can!
         </p>
-        <p className="text-lg text-black-500">
+        <p className="text-black-500 text-lg">
           For your information your data is don't saved in any kind of database
           or server the contact form it's just Client Side.
         </p>

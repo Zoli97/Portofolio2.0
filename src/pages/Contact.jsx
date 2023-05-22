@@ -89,20 +89,20 @@ function Contact() {
         exit={{ opacity: 0 }}
       >
         <Navbar />
-        <div className="w-full contact_">
-          <main className="h-screen flex items-center justify-center z-50">
+        <div className="contact_ w-full">
+          <main className="z-50 flex h-screen items-center justify-center">
             <m.form
               initial={hidden}
               animate={show}
               exit={exit}
               onSubmit={formik.handleSubmit}
-              className="flex bg-[#000000b5] form_bg rounded-lg w-11/12 lg:w-3/5 form "
+              className="form_bg form flex w-11/12 rounded-lg bg-[#000000b5] lg:w-3/5 "
             >
               <div className="flex-1 p-16">
-                <h1 className="text-3xl text-white pb-2 font-bold ">
+                <h1 className="pb-2 text-3xl font-bold text-white ">
                   Get in touch!
                 </h1>
-                <p className="text-sm sm:text-lg text-white">
+                <p className="text-sm text-white sm:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid, eos!
                 </p>
@@ -113,7 +113,7 @@ function Contact() {
                     {/** update the label based on if i have an error or not */}
                     <label
                       htmlFor="name"
-                      className={`block text-white font-medium text-sm pb-2 ${
+                      className={`block pb-2 text-sm font-medium text-white ${
                         formik.touched.name && formik.errors.name
                           ? "text-[#ff7256]"
                           : ""
@@ -125,7 +125,7 @@ function Contact() {
                     </label>
                     {/** when i typed another start updating with error message already */}
                     <input
-                      className={` w-11/12 sm:w-3/5 border-2  border-[#7a592b] p-2 rounded-md  m focus:border-[#7a592b] focus:ring-[#7a592b] ${
+                      className={` m w-11/12 rounded-md  border-2 border-[#7a592b] p-2  focus:border-[#7a592b] focus:ring-[#7a592b] sm:w-3/5 ${
                         formik.touched.name && formik.errors.name
                           ? "border-[#ff7256]"
                           : " border-[#7a592b]"
@@ -143,7 +143,7 @@ function Contact() {
                   <div className="pb-4">
                     <label
                       htmlFor="email"
-                      className={`block text-white font-medium text-sm pb-2 ${
+                      className={`block pb-2 text-sm font-medium text-white ${
                         formik.touched.email && formik.errors.email
                           ? "text-[#ff7256]"
                           : ""
@@ -154,7 +154,7 @@ function Contact() {
                         : "Email"}
                     </label>
                     <input
-                      className={` w-11/12 sm:w-3/5 border-2 border-[#7a592b] p-2 rounded-md    focus:border-[#7a592b] focus:ring-[#7a592b] ${
+                      className={` w-11/12 rounded-md border-2 border-[#7a592b] p-2 focus:border-[#7a592b]    focus:ring-[#7a592b] sm:w-3/5 ${
                         formik.touched.email && formik.errors.email
                           ? "border-[#ff7256]"
                           : " border-[#7a592b]"
@@ -172,7 +172,7 @@ function Contact() {
                   <div className="pb-4">
                     <label
                       htmlFor="city"
-                      className={`block text-white font-medium text-sm pb-2 ${
+                      className={`block pb-2 text-sm font-medium text-white ${
                         formik.touched.city && formik.errors.city
                           ? "text-[#ff7256] "
                           : ""
@@ -183,7 +183,7 @@ function Contact() {
                         : "City"}
                     </label>
                     <input
-                      className={` w-11/12 sm:w-3/5 border-2  p-2 rounded-md   focus:border-[#7a592b] focus:ring-[#7a592b] ${
+                      className={` w-11/12 rounded-md border-2  p-2 focus:border-[#7a592b]   focus:ring-[#7a592b] sm:w-3/5 ${
                         formik.touched.city && formik.errors.city
                           ? "border-[#ff7256]"
                           : " border-[#7a592b]"
@@ -201,7 +201,7 @@ function Contact() {
                   <div className="pb-4">
                     <label
                       htmlFor="terms"
-                      className={`block text-white font-medium text-sm  pb-2 ${
+                      className={`block pb-2 text-sm font-medium  text-white ${
                         formik.touched.terms && formik.errors.terms
                           ? "text-[#ff7256]"
                           : ""
@@ -225,7 +225,7 @@ function Contact() {
                         }`}
                       />
 
-                      <p className="text-sm sm:text-md font-medium text-white">
+                      <p className="sm:text-md text-sm font-medium text-white">
                         I agree with Terms and Privacy
                       </p>
                     </div>
@@ -233,7 +233,7 @@ function Contact() {
 
                   <button
                     type="submit"
-                    className="w-11/12 sm:w-3/5 bg-[#A18763] text-sm text-white py-3 mt-6 rounded-lg  "
+                    className="mt-6 w-11/12 rounded-lg bg-[#A18763] py-3 text-sm text-white sm:w-3/5  "
                   >
                     Submit
                   </button>

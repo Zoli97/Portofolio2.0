@@ -36,12 +36,12 @@ function Home() {
       >
         <Navbar />
 
-        <div className=" title1 pt-24 w-full h-1/5 sm:pt-10 ">
+        <div className=" title1 h-1/5 w-full pt-24 sm:pt-10 ">
           <Hide>
             <motion.h2
               initial={hidden}
               animate={show}
-              className=" title text-[#042740] text-center  text-lg font-medium  lg:text-[28px] text-[23px] lg:text-center "
+              className=" title text-center text-lg  text-[23px] font-medium  text-[#042740] lg:text-center lg:text-[28px] "
             >
               Find your inspiration
             </motion.h2>
@@ -118,10 +118,10 @@ function Home() {
             </div>
 
             <div>
-              <p className="text-[18px] sm:text-justify pl-16 sm:pl-20">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Praesentium eum tempora delectus eius totam iure nulla.
-                <br /> Eum, porro alias?
+              <p className="pl-16 pr-16 text-[20px] font-medium  sm:pl-20 sm:text-justify">
+                “Learning to write programs stretches your mind, and helps you
+                think better, creates a way of thinking about things that I
+                think is helpful in all domains.” - Bill Gates
               </p>
               <div className="box-describe-me flex-col items-center pl-16 sm:pl-20">
                 <Link to="/contact">
@@ -131,8 +131,8 @@ function Home() {
             </div>
           </div>
 
-          <div className="h-full hero-image ">
-            <img src={me3} className="img w-full min-h-[800px]" alt="" />
+          <div className="hero-image h-full ">
+            <img src={me3} className="img min-h-[800px] w-full" alt="" />
           </div>
         </div>
       </motion.div>

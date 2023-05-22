@@ -44,9 +44,9 @@ function Gallery() {
           transition={{ duration: 2.5 }}
         >
           <header className="header gallery ">
-            <div className="gallery container header py-4 center ">
+            <div className="gallery header center container py-4 ">
               <m.h1
-                className="text-3xl sm:text-7xl text-center"
+                className="text-center text-3xl sm:text-7xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 1.2, delay: 1 }}
