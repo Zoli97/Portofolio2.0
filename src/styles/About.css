@@ -1,3 +1,27 @@
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+/**its the entire scrollbar itself*/
+::-webkit-scrollbar-track {
+  background: #ad987a;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+  z-index: 9099;
+}
+
+/*is the part that you see that shows you where you are on the page*/
+::-webkit-scrollbar-thumb {
+  background: #ffddae;
+  border-radius: 100vw;
+  border: 0.25em solid #ad987a;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #0a2e33 #15616d;
+    scrollbar-width: auto;
+  }
+}
 .about {
   background-size: 400%;
   background-image: linear-gradient(
