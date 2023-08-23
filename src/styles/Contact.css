@@ -1,23 +1,3 @@
-.contact {
-  /* background-color: #e0cbac; */
-  background-size: 400%;
-  background-image: linear-gradient(
-    45deg,
-    hsl(35deg 100% 89%) 0%,
-    hsl(35deg 100% 88%) 14%,
-    hsl(35deg 100% 87%) 24%,
-    hsl(35deg 100% 86%) 33%,
-    hsl(35deg 100% 85%) 42%,
-    hsl(35deg 100% 85%) 51%,
-    hsl(35deg 100% 84%) 59%,
-    hsl(35deg 99% 83%) 68%,
-    hsl(35deg 99% 83%) 77%,
-    hsl(35deg 98% 82%) 88%,
-    hsl(35deg 98% 82%) 100%
-  );
-
-  animation: gradientAnimation 8s ease-in-out infinite;
-}
 .image {
   max-width: 100%;
   width: 550px;
@@ -26,16 +6,29 @@
   object-position: center;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
+.contact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/*my video take either all of the available width or height and then the width and hieght will scale with the aspect ratio to take up the enitre with or height */
+.contact video {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 640px) {

@@ -11,6 +11,26 @@
   text-transform: uppercase;
 }
 
+.gallery {
+  background-size: 400%;
+  background-image: linear-gradient(
+    45deg,
+    hsl(35deg 100% 89%) 0%,
+    hsl(35deg 100% 88%) 14%,
+    hsl(35deg 100% 87%) 24%,
+    hsl(35deg 100% 86%) 33%,
+    hsl(35deg 100% 85%) 42%,
+    hsl(35deg 100% 85%) 51%,
+    hsl(35deg 100% 84%) 59%,
+    hsl(35deg 99% 83%) 68%,
+    hsl(35deg 99% 83%) 77%,
+    hsl(35deg 98% 82%) 88%,
+    hsl(35deg 98% 82%) 100%
+  );
+
+  animation: gradientAnimation 8s ease-in-out infinite;
+}
+
 .top-to-btm {
   position: relative;
 }
@@ -33,4 +53,16 @@
   place-items: center;
   animation: move_the_btn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }

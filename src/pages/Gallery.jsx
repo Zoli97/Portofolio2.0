@@ -43,7 +43,7 @@ function Gallery() {
           exit={{ oapcity: 0 }}
           transition={{ duration: 2.5 }}
         >
-          <header className="header gallery ">
+          <header className="header gallery  ">
             <div className="gallery header center container py-4 ">
               <m.h1
                 className="text-center text-3xl sm:text-7xl"

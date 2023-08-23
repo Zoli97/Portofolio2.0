@@ -28,7 +28,7 @@ function Home() {
     <ThemeProvider theme={checkCurrentTheme}>
       <GlobalStyles />
       <motion.div
-        className=" h-screen overflow-y-hidden"
+        className=" home h-screen overflow-y-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ oapcity: 0 }}

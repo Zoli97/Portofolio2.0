@@ -35,8 +35,8 @@ function About() {
   /**
    * *last things i want to take the theme variable from the store so i use the useSelector hook;
    * * create a state that will control the visibilty of the scroll top button that set to false by default, i want only appear after the user has scrolled down.
-   * * i will use the useeffect hook to determine when i want to show the button and when i want it to disappear.
-   * * add an eventlistener to the window to lsiten for a scroll and ruin the function when the conditional within the listener returns true.
+   * * i will use the useffect hook to determine when i want to show the button and when i want it to disappear.
+   * * add an eventlistener to the window to listen for a scroll and ruin the function when the conditional within the listener returns true.
    * * if the scroll is more than 400 the state function will sets to true otherwise is false.
    * * constantly will run when i scroll through the webpage and will thus update button to stop showing when its scrolled back
    */
