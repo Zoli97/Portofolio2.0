@@ -15,7 +15,7 @@ h2{
 
 .body{
 
-background: ${({ theme }) => theme.background};
+
   color: ${({ theme }) => theme.text};
   transition: background 0.5s ease-in-out, color 0.8s ease-in-out;
   
