@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import img from "../images/bg_pexels2.jpg";
+import img from "../images/office.jpg";
 import liquify from "../assets/liquify.mp4";
 import "../styles/Contact.css";
 
@@ -216,19 +216,20 @@ function Contact() {
                       : "Terms of Service"}
                   </label>
                   <div className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      name="terms"
-                      id=""
-                      value="checked"
-                      onChange={formik.handleChange}
-                      className={`h-5 w-5 border-2 focus:border-[#7a592b] focus:ring-[#7a592b] ${
-                        formik.touched.terms && formik.errors.terms
-                          ? "border-[#ff7256]"
-                          : " border-[#7a592b]"
-                      }`}
-                    />
-
+                    <label htmlFor="terms">
+                      <input
+                        type="checkbox"
+                        name="terms"
+                        id="terms"
+                        value="checked"
+                        onChange={formik.handleChange}
+                        className={`h-5 w-5 border-2 focus:border-[#7a592b] focus:ring-[#7a592b] ${
+                          formik.touched.terms && formik.errors.terms
+                            ? "border-[#ff7256]"
+                            : " border-[#7a592b]"
+                        }`}
+                      />
+                    </label>
                     <p className="sm:text-md text-sm font-medium text-white">
                       I agree with Terms and Privacy
                     </p>
@@ -237,7 +238,7 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="mt-6 w-11/12 rounded-lg bg-[#A18763] py-3 text-sm text-white sm:w-3/5  "
+                  className="mt-6 w-11/12 rounded-lg bg-[#1e627e] py-3 text-xl text-white sm:w-3/5  "
                 >
                   Submit
                 </button>

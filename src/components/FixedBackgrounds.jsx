@@ -1,8 +1,8 @@
 import React from "react";
 import leaf from "../images/leaf.jpg";
 import trees from "../images/trees.jpg";
-import leaf3 from "../images/leaf3.jpg";
-import forest4 from "../images/forest4.jpg";
+import leaf3 from "../images/leafs.jpg";
+import forest4 from "../images/foresttt.jpg";
 import { Image } from "../components/Image";
 import { motion as m, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -164,7 +164,14 @@ export const FixedBackgrounds = () => {
         </m.p>
       </div>
 
-      <Image src={leaf3} alt="Space Port Background" height="50vh" fixed darken>
+      <Image
+        src={leaf3}
+        alt="Space Port Background"
+        height="50vh"
+        fixed
+        darken
+        loading="lazy"
+      >
         <m.h4
           className="text-center text-3xl sm:text-7xl"
           style={title}
@@ -187,7 +194,14 @@ export const FixedBackgrounds = () => {
         </m.p>
       </div>
 
-      <Image src={trees} alt="Space Port Background" height="50vh" fixed darken>
+      <Image
+        src={trees}
+        alt="Space Port Background"
+        height="50vh"
+        fixed
+        darken
+        loading="lazy"
+      >
         <m.h4
           className="text-center text-3xl sm:text-7xl"
           style={title}
@@ -214,6 +228,7 @@ export const FixedBackgrounds = () => {
         height="50vh"
         fixed
         darken
+        loading="lazy"
       >
         <m.h4
           className="text-center text-3xl sm:text-7xl"
