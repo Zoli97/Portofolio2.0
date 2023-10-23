@@ -96,7 +96,7 @@ export const FixedBackgrounds = () => {
       <div className="container1 py-12 " style={container}>
         <div>
           <m.p
-            className="constrain mb-4 text-center text-sm  sm:text-[18px]"
+            className="desc constrain mb-4 text-center text-sm  sm:text-[18px]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             style={content}
@@ -145,7 +145,7 @@ export const FixedBackgrounds = () => {
 
       <div className="container1 py-12 " style={container}>
         <m.p
-          className="constrain  mb-4 text-center text-sm sm:text-[18px]"
+          className="desc constrain  mb-4 text-center text-sm sm:text-[18px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.2, delay: 0.8 }}
@@ -155,7 +155,7 @@ export const FixedBackgrounds = () => {
         </m.p>
 
         <m.p
-          className="constrain text-center text-sm  sm:text-[18px]"
+          className="desc constrain text-center text-sm  sm:text-[18px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           style={content}
@@ -185,7 +185,7 @@ export const FixedBackgrounds = () => {
 
       <div className="container1 py-12 " style={container}>
         <m.p
-          className="constrain mb-4 "
+          className=" desc constrain mb-4 "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           style={content}
@@ -214,10 +214,10 @@ export const FixedBackgrounds = () => {
       </Image>
 
       <div className="container1 py-12 " style={container}>
-        <p className="constrain mb-4 text-center" style={content}>
+        <p className="desc constrain mb-4 text-center" style={content}>
           The nature is vital to our existence on earth.
         </p>
-        <p className="constrain mb-4 text-center" style={content}>
+        <p className="desc constrain mb-4 text-center" style={content}>
           Look deep into the forest.
         </p>
       </div>

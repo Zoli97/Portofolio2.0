@@ -122,6 +122,10 @@ color: ${({ theme }) => theme.text};
   fill: ${({ theme }) => theme.arr_dwn_bg};
 }
 
+.desc {
+  color: ${({ theme }) => theme.gallery_text}
+}
+
 
 
   

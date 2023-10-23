@@ -11,6 +11,7 @@ export const lighTheme = {
 
 export const darkTheme = {
   text: "#fff",
+  gallery_text: "#fff",
   svg_elipse_bg: "#fff",
   home_background: "#242424",
   elipse_background: "#226068",
