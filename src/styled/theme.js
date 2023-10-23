@@ -12,7 +12,7 @@ export const lighTheme = {
 export const darkTheme = {
   text: "#fff",
   svg_elipse_bg: "#fff",
-  background: "#242424",
+  home_background: "#242424",
   elipse_background: "#226068",
   about_background: "#242424",
   quotes_container: "#1a1919",
