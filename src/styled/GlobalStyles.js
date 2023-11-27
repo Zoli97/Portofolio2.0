@@ -128,6 +128,8 @@ color: ${({ theme }) => theme.text};
 }
 
 
-
+.footer_{
+  background:${({ theme }) => theme.footer_dark_theme};
+}
   
 `;

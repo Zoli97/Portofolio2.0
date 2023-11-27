@@ -8,6 +8,7 @@ import { lighTheme, darkTheme } from "../styled/theme";
 import { useSelector } from "react-redux";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import "../styles/Gallery.css";
+import Footer from "../components/Footer";
 
 function Gallery() {
   const { theme } = useSelector((state) => state.dark_theme);
@@ -74,6 +75,7 @@ function Gallery() {
             </div>
           </div>
         )}
+        <Footer />
       </m.div>
     </ThemeProvider>
   );

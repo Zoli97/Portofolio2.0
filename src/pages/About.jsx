@@ -12,6 +12,7 @@ import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import "../styles/About.css";
+import Footer from "../components/Footer";
 
 function About() {
   const { theme } = useSelector((state) => state.dark_theme);
@@ -235,6 +236,8 @@ function About() {
             </div>
           </div>
         )}
+
+        <Footer />
       </m.div>
     </ThemeProvider>
   );

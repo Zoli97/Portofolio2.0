@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
 import Useoverflowhidden from "../hooks/Useoverflowhidden";
 import me3 from "../images/me3.png";
-
+import Footer from "../components/Footer";
 import "../styles/Home.css";
 
 function Home() {
@@ -138,6 +138,8 @@ function Home() {
             <img src={me3} className="img min-h-[800px] w-full" alt="" />
           </div>
         </div>
+
+        <Footer />
       </motion.div>
     </ThemeProvider>
   );

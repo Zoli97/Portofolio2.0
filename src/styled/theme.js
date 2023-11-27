@@ -7,6 +7,7 @@ export const lighTheme = {
   elipse_background: "#15616D",
   svg_text_background_: "#042740",
   btn_hover_bg: "#042740",
+  footer_light_theme: "#ad987a;",
 };
 
 export const darkTheme = {
@@ -27,6 +28,7 @@ export const darkTheme = {
   showTopBtn_color: "#000",
   arr_dwn_bg: "#fff",
   navbar_responsive_active: "#1a1919",
+  footer_dark_theme: "#0f0f0f",
 };
 
 //#4e4e4e7d #4e4e4e52
