@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 //then i will need the reducers that will emit an action
 
 const initialState = {
-  theme: "light",
+  theme: JSON.parse(localStorage.getItem("theme")) ?? true,
 };
 export const themeSlice = createSlice({
   name: "theme",
@@ -13,8 +13,9 @@ export const themeSlice = createSlice({
 
   reducers: {
     toggleTheme(state) {
-      state.theme = state.theme === "light" ? "dark" : "light";
-      //localStorage.setItem("dark", state.theme);
+      const nextState = (state.theme =
+        state.theme === "light" ? "dark" : "light");
+      localStorage.setItem("theme", JSON.stringify(nextState));
     },
   },
 });

@@ -17,11 +17,11 @@ h2{
 
 background: ${({ theme }) => theme.home_background};
   color: ${({ theme }) => theme.text};
-  transition: background 0.5s ease-in-out, color 0.8s ease-in-out;
+  transition: background 0.3s ease, color 0.3s ease;
   
 }
 
-.nav-items.active{
+.nav-menu.active{
   background: ${({ theme }) => theme.navbar_};
 }
 
@@ -41,12 +41,15 @@ background: ${({ theme }) => theme.home_background};
 
 color: ${({ theme }) => theme.text};
 }
+.responsive_navbar{
+    background: ${({ theme }) => theme.navbar_background};
+  }
 
 .top_navbar_title{color: ${({ theme }) => theme.text};}
 
 .about{
   background: ${({ theme }) => theme.about_background};
-  transition: background 0.5s ease-in-out, color 0.8s ease-in-out;
+  transition: background 0.3s ease, color 0.3s ease;
  
 }
 
@@ -64,7 +67,7 @@ color: ${({ theme }) => theme.text};
 
   .gallery {
     background: ${({ theme }) => theme.gallery_background};
-    transition: all 0.5s ease-in-out, color 0.8s ease-in-out;
+    transition: all 0.3s ease, color 0.3s ease;
    
   }
   
@@ -93,11 +96,9 @@ color: ${({ theme }) => theme.text};
 
     background: ${({ theme }) => theme.hamburger_default_background};
   }
+  
 
-  .responsive_navbar{
-    background: ${({ theme }) => theme.navbar_background};
-  }
-
+  
   .button_bg{
 
     background: ${({ theme }) => theme.button_background};

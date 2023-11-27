@@ -34,7 +34,13 @@ function Gallery() {
   return (
     <ThemeProvider theme={checkCurrentTheme}>
       <GlobalStyles />
-      <div className="gallery">
+      <m.div
+        className="gallery"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ oapcity: 0 }}
+        transition={{ duration: 2.5 }}
+      >
         <Navbar />
 
         <m.div
@@ -49,7 +55,7 @@ function Gallery() {
                 className="text-center text-3xl sm:text-7xl"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ ease: "easeOut", duration: 1.2, delay: 1 }}
+                transition={{ ease: "easeOut", duration: 1.2, delay: 2.5 }}
               >
                 Welcome to my Gallery
               </m.h1>
@@ -68,7 +74,7 @@ function Gallery() {
             </div>
           </div>
         )}
-      </div>
+      </m.div>
     </ThemeProvider>
   );
 }

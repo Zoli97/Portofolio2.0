@@ -26,6 +26,7 @@ export const darkTheme = {
   showTopBtn_background: "#fff",
   showTopBtn_color: "#000",
   arr_dwn_bg: "#fff",
+  navbar_responsive_active: "#1a1919",
 };
 
 //#4e4e4e7d #4e4e4e52

@@ -7,7 +7,9 @@ import { GlobalStyles } from "../styled/GlobalStyles";
 import { lighTheme, darkTheme } from "../styled/theme";
 import { ThemeProvider } from "styled-components";
 import { useSelector } from "react-redux";
+import Useoverflowhidden from "../hooks/Useoverflowhidden";
 import me3 from "../images/me3.png";
+
 import "../styles/Home.css";
 
 function Home() {
@@ -24,6 +26,7 @@ function Home() {
     y: 0,
     transition: { delay: 1.2, duration: 0.8, ease: "easeOut" },
   };
+  Useoverflowhidden();
   return (
     <ThemeProvider theme={checkCurrentTheme}>
       <GlobalStyles />

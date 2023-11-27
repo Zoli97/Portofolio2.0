@@ -51,9 +51,9 @@ function Contact() {
     },
   });
 
-  console.log(formik.errors);
+  //console.log(formik.errors);
 
-  console.log(formik.values);
+  // console.log(formik.values);
 
   const hidden = {
     opacity: 0,
@@ -100,15 +100,14 @@ function Contact() {
             animate={show}
             exit={exit}
             onSubmit={formik.handleSubmit}
-            className="form_bg form flex w-11/12 rounded-lg border-8 border-solid border-black bg-[#00000057] lg:w-3/5"
+            className="form_bg form flex w-11/12 rounded-lg border-2 border-solid border-white bg-[#00000057] lg:w-3/5"
           >
             <div className="flex-1 p-16">
               <h1 className="pb-2 text-3xl font-bold text-white ">
                 Get in touch!
               </h1>
               <p className="text-sm text-white sm:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid, eos!
+                I would love to hear from you !
               </p>
 
               <div className="mt-6">

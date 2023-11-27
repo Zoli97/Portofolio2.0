@@ -7,10 +7,10 @@ import { useMediaQuery } from "@mui/material";
 import Hamburger from "./Hamburger";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import "../styles/Navbar.css";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
-
+import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import "../styles/Navbar.css";
 function Navbar() {
   //**i need the action creator that is the dispatch, this will return me an action so when i click the button i need to toggle theme (in simple term dispatch an action)
 
@@ -21,18 +21,25 @@ function Navbar() {
   // the toggle state logic when its light theme then the icon is moon and vice versa.(true value is light icon and the false value is moon icon)
   const [theme, setTheme] = useState(true);
   const isMobile = useMediaQuery("(width <= 768px)");
-  const sun = {
-    color: "yellow",
-  };
+  // const sun = {
+  //   color: "yellow",
+  // };
 
-  const moon = {
-    color: "black",
-  };
-  const icon = !theme ? (
-    <LightModeIcon style={sun} />
-  ) : (
-    <DarkModeIcon style={moon} />
-  );
+  // const moon = {
+  //   color: "black",
+  // };
+  // const icon = theme ? (
+  //   <DarkModeIcon style={moon} />
+  // ) : (
+  //   <LightModeIcon style={sun} />
+  // );
+
+  const links = [
+    { id: 1, name: "Home", to: "/" },
+    { id: 2, name: "About", to: "/about" },
+    { id: 3, name: "Gallery", to: "/gallery" },
+    { id: 4, name: "Contact", to: "/contact" },
+  ];
 
   const ToggleTheTheme = () => {
     my_dispatch(themeActions.toggleTheme());
@@ -45,6 +52,7 @@ function Navbar() {
 
   const menuVariants = {
     open: {
+      transition: { delay: 0.4, duration: 0.6 },
       transform: "translateX(0%)",
     },
 
@@ -93,80 +101,62 @@ function Navbar() {
           animate={isOpen ? "open" : "closed"}
           variants={menuVariants}
           transition={menuTransition}
-          className={`nav-items  
+          className={`nav-menu 
           ${
-            isOpen ? "active responsive_navbar" : ""
-          }  flex w-3/12 gap-12 text-xl font-light text-[#042740]`}
+            isOpen ? "active responsive_navbar " : ""
+          }  flex w-3/12 gap-8 text-xl font-light text-[#042740]`}
         >
+          {links.map(({ id, name, to }) => (
+            <mo.a
+              className="link list_text nav-item cursor-pointer"
+              key={id}
+              name={name}
+              href={to}
+              initial={false}
+              animate={isOpen ? "show" : "hide"}
+              variants={{
+                show: {
+                  ...listVariants.show,
+                  transition: { delay: 1.5, duration: 1.5 },
+                },
+
+                hide: {
+                  ...listVariants.hide,
+                },
+              }}
+            >
+              {name}
+            </mo.a>
+          ))}
           <mo.li
-            className=" link list_text cursor-pointer"
+            className=" link list_text nav-item cursor-pointer"
             initial={false}
             animate={isOpen ? "show" : "hide"}
             variants={{
               show: {
                 ...listVariants.show,
-                transition: { delay: 0.3, duration: 0.2 },
+                transition: { delay: 1.5, duration: 1.5 },
               },
 
               hide: {
                 ...listVariants.hide,
-                transition: { delay: 0.05, duration: 0.05 },
               },
             }}
           >
-            {isMobile}
-            <Link className="link_text" to="/about">
-              About
-            </Link>
-          </mo.li>
-
-          <mo.li
-            className=" link list_text cursor-pointer"
-            initial={false}
-            animate={isOpen ? "show" : "hide"}
-            variants={{
-              show: {
-                ...listVariants.show,
-                transition: { delay: 0.4, duration: 0.2 },
-              },
-
-              hide: {
-                ...listVariants.hide,
-                transition: { delay: 0.1, duration: 0.05 },
-              },
-            }}
-          >
-            {isMobile}
-            <Link className="link_text" to="/gallery">
-              Gallery
-            </Link>
-          </mo.li>
-
-          <mo.li
-            className=" link list_text cursor-pointer"
-            initial={false}
-            animate={isOpen ? "show" : "hide"}
-            variants={{
-              show: {
-                ...listVariants.show,
-                transition: { delay: 0.5, duration: 0.2 },
-              },
-
-              hide: {
-                ...listVariants.hide,
-                transition: { delay: 0.15, duration: 0.05 },
-              },
-            }}
-          >
-            {isMobile}
-            <Link className="link_text" to="/contact">
-              Contact
-            </Link>
-          </mo.li>
-
-          <mo.li className=" link list_text cursor-pointer">
-            {isMobile}
-            <IconButton onClick={ToggleTheTheme}>{icon}</IconButton>
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                className="checkbox"
+                onChange={ToggleTheTheme}
+              />
+              <label htmlFor="checkbox" className="checkbox-label">
+                <BsMoonStarsFill color="white" />
+                <BsFillSunFill color="yellow" />
+                <span className="ball"></span>
+              </label>
+            </div>
           </mo.li>
         </motion.ul>
       </nav>
