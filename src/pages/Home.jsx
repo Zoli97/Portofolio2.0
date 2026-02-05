@@ -14,10 +14,12 @@ import "../styles/Home.css";
 
 function Home() {
   // last things i want to take the theme variable from the store so i use the useSelector hook;
+
   const { theme } = useSelector((state) => state.dark_theme);
   const checkCurrentTheme = theme === "light" ? lighTheme : darkTheme;
   console.log(theme);
 
+  const isLight = theme === "light";
   const hidden = {
     y: 200,
   };
@@ -44,13 +46,13 @@ function Home() {
             <motion.h2
               initial={hidden}
               animate={show}
-              className=" title text-center text-lg  text-[23px] font-medium  text-[#042740] lg:text-center lg:text-[28px] "
+              className=" title text-center text-[23px]  text-lg font-medium  text-[#042740] lg:text-center lg:text-[28px] "
             >
               Find your inspiration
             </motion.h2>
           </Hide>
         </div>
-        <div className="hero grid place-items-center ">
+        <div className="hero relative grid place-items-center ">
           <div className="content sm:mb-[28em]">
             <div className="hero-svg  ">
               <svg
@@ -134,8 +136,50 @@ function Home() {
             </div>
           </div>
 
-          <div className="hero-image h-full ">
+          {/* <div className="hero-image h-full ">
             <img src={me3} className="img min-h-[800px] w-full" alt="" />
+          </div> */}
+
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-0 w-1/2">
+            {/* First blob - More vibrant Teal to cut through the beige */}
+            <motion.div
+              className="absolute right-[10%] top-[30%] h-[25vw] max-h-[300px] w-[30vw] max-w-[400px] rounded-full blur-[110px] filter"
+              style={{
+                // 'soft-light' is the secret for light mode; it glows without getting 'muddy'
+                mixBlendMode: isLight ? "soft-light" : "screen",
+                opacity: isLight ? 0.8 : 0.6, // Higher opacity for soft-light
+                background: isLight
+                  ? "radial-gradient(circle, rgba(20, 184, 166, 0.7) 0%, transparent 80%)"
+                  : "radial-gradient(circle, rgba(20, 184, 166, 0.8) 0%, transparent 70%)",
+              }}
+              animate={{
+                x: [0, -40, 20, 0],
+                y: [0, 30, -20, 0],
+                scale: [1, 1.1, 0.9, 1],
+              }}
+              transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+            />
+
+            {/* Second blob - Switched to a Warm Coral/Orange for the beige background */}
+            <motion.div
+              className="absolute right-[20%] top-0 h-[18vw] max-h-[200px] w-[20vw] max-w-[300px] rounded-full blur-[90px] filter"
+              style={{
+                mixBlendMode: isLight ? "soft-light" : "screen",
+                opacity: isLight ? 0.7 : 0.5,
+                background: isLight
+                  ? "radial-gradient(circle, rgba(17, 99, 167, 0.6) 0%, transparent 80%)"
+                  : "radial-gradient(circle, rgba(179, 29, 104, 0.85) 0%, transparent 80%)",
+              }}
+              animate={{
+                x: [0, 60, -30, 0],
+                scale: [1, 1.2, 1, 1],
+              }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
           </div>
         </div>
 
