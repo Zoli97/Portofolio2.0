@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <GlobalStyles />
       <footer className="footer__container footer_">
-        <p className="copyright_text">@Copyright Tazlo Zoli 2023</p>
+        <p className="copyright_text">@Copyright Tazlo Zoli 2026</p>
       </footer>
     </div>
   );
