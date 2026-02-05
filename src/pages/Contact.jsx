@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import img from "../images/office.jpg";
-import liquify from "../assets/liquify.mp4";
+import liquify from "../assets/abstract.mp4";
 import "../styles/Contact.css";
 
 function Contact() {
@@ -86,13 +86,14 @@ function Contact() {
       exit={{ opacity: 0 }}
     >
       <div className="pointer-events-none absolute inset-0 z-[-1] overflow-hidden">
-        <iframe
+        <video
           className="absolute left-1/2 top-1/2 h-[56.25vw] min-h-[100vh] w-[100vw] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
-          src="https://www.youtube.com/embed/Zi-5TXahbTw?autoplay=1&mute=1&loop=1&playlist=Zi-5TXahbTw&controls=0&showinfo=0&rel=0&modestbranding=1"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          title="Background Video"
-        />
+          autoPlay
+          muted
+          loop
+          playsInline
+          src={liquify}
+        ></video>
       </div>
       <div className="contact_ w-full ">
         <main className="z-50 flex items-center justify-center ">
