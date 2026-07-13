@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
@@ -254,10 +255,17 @@ function Contact() {
       </div>
       <h1
         style={{
+          width: "200px",
+          height: "45px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           zIndex: "10",
           color: "#ffffff",
           fontSize: "20px",
           cursor: "pointer",
+          background: "black",
+          borderRadius: "5px",
         }}
         onClick={backHandler}
       >

@@ -99,7 +99,7 @@ function About() {
                 whileInView={{ opacity: 1 }}
                 className="_description_ description descriptions text-justify text-sm font-medium text-[#042740] sm:text-[18px]"
               >
-                I live in Romania, Arad for 25 years. I hold bachelor degree as
+                I live in Romania, Arad for 29 years. I hold bachelor degree as
                 I gratuated in Computer Science from the Aurel Vlaicu
                 University. On the other way the city is beautiful it’s very
                 unique and special for me. I'm interesed to working together in
@@ -138,7 +138,7 @@ function About() {
           </m.div>
         </div>
 
-        <div className="svg-container flex justify-center pt-24 pb-24 sm:hidden">
+        <div className="svg-container flex justify-center pb-24 pt-24 sm:hidden">
           <svg
             width="96"
             height="89"
