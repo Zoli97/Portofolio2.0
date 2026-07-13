@@ -240,7 +240,7 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="mt-6 w-11/12 rounded-lg bg-[#1e627e] py-3 text-xl text-white sm:w-3/5  "
+                  className="mt-6 w-11/12 rounded-lg bg-[#000] py-3 text-xl text-white sm:w-3/5  "
                 >
                   Submit
                 </button>
